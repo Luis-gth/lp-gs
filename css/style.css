@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background-color:#020b18;
+}
+
+.hero{
+    min-height:100vh;
+    background-image:linear-gradient(to bottom, rgba(2,11,24,0) 55%, #020b18 100%), url('../img/profissional.png');
+    background-position:center top;
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+}
+
+.site-content{
+    min-height:100vh;
+    background-color:#020b18;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:150px;
+    padding:0 8%;
+    background:transparent;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index:9999;
+    transition:0.3s ease;
+}
+
+.header.scrolled{
+    background-color:#031022;
+}
+
+.header h1{
+    color:#fff;
+    font-size:30px;
+    font-weight:705;
+    margin-left:5px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.logo img {
+    width: 150px;   /* tamanho da logo */
+    height:auto;
+    margin-top:0;
+    transform: translateX(50px);
+    object-fit:contain;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    gap:36px;
+    transform:translateX(-50px);
+    background-color:transparent;
+}
+
+.navbar a{
+    color:#fff;
+    font-size:20px;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+
+.navbar .ativo-link{
+    color:var(--vermelho);
+}
