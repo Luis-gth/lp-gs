@@ -12,7 +12,7 @@ body{
 
 .hero{
     min-height:100vh;
-    background-image:linear-gradient(to bottom, rgba(2,11,24,0) 55%, #020b18 100%), url('../img/profissional.png');
+    background-image:linear-gradient(to bottom, rgba(2,11,24,0) 55%, #020b18 100%), url('../img/att1.png');
     background-position:center top;
     background-size:cover;
     background-repeat:no-repeat;
@@ -46,9 +46,9 @@ body{
 .header h1{
     color:#fff;
     font-size:30px;
-    font-weight:705;
+    font-weight:600;
     margin-left:5px;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Bodoni Moda', Georgia, serif;
 }
 
 .logo img {
