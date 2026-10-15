@@ -20,7 +20,13 @@
 
         <h1>GS Clínica Capilar</h1>
 
-        <nav class="navbar">
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="navbar" id="primary-navigation">
             <a href="index.html">Home</a>
             <a href="protese.html">Prótese Capilar</a>
             <a href="resultados.html">Resultados</a>
@@ -30,7 +36,13 @@
     </header>
 
     <main>
-        <section class="hero"></section>
+        <section class="hero" aria-hidden="true">
+            <picture class="hero-image">
+                <source media="(max-width: 480px)" srcset="img/profissional.png">
+                <source media="(min-width: 481px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/profissional.png">
+                <img src="img/final.png" alt="">
+            </picture>
+        </section>
         <section class="site-content" aria-labelledby="solucao-titulo">
             <div class="solucao-pilares" aria-label="Aspectos da prótese capilar">
                 <p class="solucao-pilares-chamada">Uma solução pensada para acompanhar você</p>
