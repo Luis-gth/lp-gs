@@ -165,6 +165,73 @@ body{
     outline-offset:5px;
 }
 
+.autoestima{
+    position:relative;
+    overflow:hidden;
+    padding:clamp(72px, 9vw, 128px) 8%;
+    background:linear-gradient(180deg, #020b18 0%, #06152a 100%);
+}
+
+.autoestima-intro{
+    max-width:780px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.autoestima-etiqueta{
+    margin-bottom:18px;
+    color:#d8b77a;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+}
+
+.autoestima-intro h2{
+    color:#fff;
+    font-family:'Bodoni Moda', Georgia, serif;
+    font-size:clamp(34px, 4vw, 52px);
+    font-weight:600;
+    line-height:1.15;
+}
+
+.autoestima-intro > p:last-child{
+    max-width:680px;
+    margin:22px auto 0;
+    color:#c5cfdb;
+    font-size:17px;
+    line-height:1.75;
+}
+
+.autoestima-beneficios{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:36px;
+    max-width:1120px;
+    margin:58px auto 0;
+    padding:0;
+    list-style:none;
+}
+
+.autoestima-beneficios li{
+    padding:20px 20px 22px;
+    border-left:2px solid #d8b77a;
+    background:rgba(255,255,255,0.025);
+}
+
+.autoestima-beneficios h3{
+    color:#fff;
+    font-size:19px;
+    line-height:1.4;
+}
+
+.autoestima-beneficios p{
+    margin-top:8px;
+    color:#c5cfdb;
+    font-size:15px;
+    line-height:1.7;
+}
+
 @media (max-width:800px){
     .site-content{
         grid-template-columns:1fr;
@@ -178,6 +245,18 @@ body{
 
     .solucao-conteudo{
         max-width: none;
+    }
+
+    .autoestima{
+        padding-right:7%;
+        padding-left:7%;
+    }
+
+    .autoestima-beneficios{
+        grid-template-columns:1fr;
+        gap:24px;
+        max-width:600px;
+        margin-top:42px;
     }
 }
 
@@ -194,6 +273,19 @@ body{
     .solucao-resposta p{
         font-size:16px;
     }
+
+    .autoestima{
+        padding:56px 6%;
+    }
+
+    .autoestima-etiqueta{
+        font-size:12px;
+    }
+
+    .autoestima-intro > p:last-child{
+        font-size:16px;
+    }
+
 }
 
 .header{
@@ -417,7 +509,7 @@ body{
     }
 }
 
-@media (min-width:481px) and (max-width:1024px) and (orientation:portrait){
+@media (min-width:481px) and (max-width:1200px) and (orientation:portrait){
     .hero{
         display:flex;
         padding-top:152px;
@@ -442,7 +534,7 @@ body{
     }
 }
 
-@media (min-width:481px) and (max-width:1350px) and (orientation:landscape){
+@media (min-width:481px) and (max-width:1440px) and (orientation:landscape){
     .hero{
         display:flex;
         padding-top:152px;
