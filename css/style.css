@@ -231,3 +231,41 @@ body{
 .navbar .ativo-link{
     color:var(--vermelho);
 }
+
+.whatsapp-flutuante{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+    z-index:10000;
+    display:block;
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    box-shadow:0 4px 12px rgba(0,0,0,0.28);
+    transition:transform 0.2s ease;
+}
+
+.whatsapp-flutuante img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.whatsapp-flutuante:hover{
+    transform:translateY(-2px) scale(1.04);
+}
+
+.whatsapp-flutuante:focus-visible{
+    outline:3px solid #fff;
+    outline-offset:3px;
+}
+
+@media (max-width:480px){
+    .whatsapp-flutuante{
+        right:16px;
+        bottom:16px;
+        width:56px;
+        height:56px;
+    }
+}
